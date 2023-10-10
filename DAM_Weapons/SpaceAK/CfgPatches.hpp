@@ -11,6 +11,8 @@ class CfgPatches
                 // Core Config
             "A3_Weapons_F_Exp_Rifles_AKM",
                 // AKM
+            "A3_Weapons_F_Exp_Rifles_AK12",
+                // AK-15
             "Aux501_Patch_DC15A",
                 // Magazine, ammo
             "Aux501_Patch_Accessories"
@@ -19,7 +21,8 @@ class CfgPatches
         units[] = {};
         weapons[] =
         {
-            "DAM_AKM"
+            "DAM_AKM",
+            "DAM_AK15"
         };
     };
 };

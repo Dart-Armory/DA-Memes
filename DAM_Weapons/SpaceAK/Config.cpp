@@ -54,6 +54,54 @@ class CfgWeapons
             };
         };
     };
+
+    class arifle_AK12_base_F;
+    class arifle_AK12_F: arifle_AK12_base_F
+    {
+        class WeaponSlotsInfo;
+    };
+    class DAM_AK15: arifle_AK12_F
+    {
+        // Mod Info
+        author = "DartRuffian";
+
+        // Scope
+        scope = 2;
+        scopeArsenal = 2;
+
+        displayName = "[DA] AK-15";
+        baseWeapon = "DAM_AK15";
+
+        magazines[] = {"DAM_Mag_AK_30Rnd", "DAM_Mag_AK_75Rnd"};
+        magazineWell[] = {};
+
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            class CowsSlot: CowsSlot_Rail
+            {
+                compatibleItems[] =
+                {
+                    "Aux501_cows_dms",
+                    "Aux501_cows_dms_2",
+                    "Aux501_cows_dms_3",
+                    "Aux501_cows_dms_4",
+                    "Aux501_cows_holoscope",
+                    "Aux501_cows_holoscope_2",
+                    "Aux501_cows_holoscope_3",
+                    "Aux501_cows_holosight",
+                    "Aux501_cows_holosight_2",
+                    "Aux501_cows_holosight_3",
+                    "Aux501_cows_mrco",
+                    "Aux501_cows_mrco_2",
+                    "Aux501_cows_mrco_3",
+                    "Aux501_cows_rco",
+                    "Aux501_cows_rco_2",
+                    "Aux501_cows_rco_3",
+                    "Aux501_cows_reflex_optic"
+                };
+            };
+        };
+    };
 };
 
 
