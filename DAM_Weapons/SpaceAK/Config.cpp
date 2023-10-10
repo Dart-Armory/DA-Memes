@@ -79,6 +79,8 @@ class CfgMagazines
         model = "\A3\weapons_F\ammo\mag_univ.p3d";
         modelSpecial = "\a3\Weapons_F_Exp\MagazineProxies\mag_762x39_akm_30rnd.p3d";
         modelSpecialIsProxy = 1;
+        hiddenSelections[] = {};
+        hiddenSelectionsTextures[] = {};
         picture = "\A3\Weapons_F_Exp\Data\UI\icon_30Rnd_762x39_Mag_F_ca.paa";
     };
 };
