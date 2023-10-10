@@ -16,8 +16,8 @@ class CfgWeapons
             class CowsSlot;
         };
     };
-    class arifle_AKM_base_F: arifle_AKM_base_F {};
-    class DAM_AKM: arifle_AKM_base_F
+    class arifle_AKM_F: arifle_AKM_base_F {};
+    class DAM_AKM: arifle_AKM_F
     {
         // Mod Info
         dlc = "BNA_KC";
