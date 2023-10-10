@@ -30,7 +30,7 @@ class CfgWeapons
         displayName = "[DA] AKM";
         baseWeapon = "DAM_AKM";
 
-        magazines[] = {"DAM_Mag_AKM_30Rnd", "DAM_Mag_AKM_75Rnd"};
+        magazines[] = {"DAM_Mag_AK_30Rnd", "DAM_Mag_AK_75Rnd"};
         magazineWell[] = {};
 
         class WeaponSlotsInfo: WeaponSlotsInfo
@@ -66,7 +66,7 @@ class CfgWeapons
 class CfgMagazines
 {
     class Aux501_Weapons_Mags_20mwdp30;
-    class DAM_Mag_AKM_30Rnd: Aux501_Weapons_Mags_20mwdp30
+    class DAM_Mag_AK_30Rnd: Aux501_Weapons_Mags_20mwdp30
     {
         author = "DartRuffian";
         displayName = "[DA] AKM Magazine";
@@ -86,7 +86,7 @@ class CfgMagazines
         mass = 10;
     };
 
-    class DAM_Mag_AKM_75Rnd: DAM_Mag_AKM_30Rnd
+    class DAM_Mag_AK_75Rnd: DAM_Mag_AK_30Rnd
     {
         displayName = "[DA] AKM Drum Magazine";
         descriptionShort = "Energy Cell<br/>Rounds: 75<br/>Used In: AKM";
