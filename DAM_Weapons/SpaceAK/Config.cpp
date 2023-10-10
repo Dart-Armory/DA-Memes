@@ -14,7 +14,6 @@ class CfgWeapons
     class DAM_AKM: arifle_AKM_F
     {
         // Mod Info
-        dlc = "BNA_KC";
         author = "SweMonkey and DartRuffian";
 
         // Scope
