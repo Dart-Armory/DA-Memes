@@ -30,7 +30,7 @@ class CfgWeapons
         displayName = "[DA] AKM";
         baseWeapon = "DAM_AKM";
 
-        magazines[] = {};
+        magazines[] = {"DAM_Mag_AKM_30Rnd"};
         magazineWell[] = {};
 
         class WeaponSlotsInfo: WeaponSlotsInfo
