@@ -1,20 +1,14 @@
 #include "CfgPatches.hpp"
 
 
+class CowsSlot_Rail;
+
 class CfgWeapons
 {
-    class RifleCore;
-    class Rifle: RifleCore
-    {
-        class WeaponSlotsInfo;
-    };
-    class Rifle_Base_F: Rifle {};
+    class Rifle_Base_F;
     class arifle_AKM_base_F: Rifle_Base_F
     {
-        class WeaponSlotsInfo: WeaponSlotsInfo
-        {
-            class CowsSlot;
-        };
+        class WeaponSlotsInfo;
     };
     class arifle_AKM_F: arifle_AKM_base_F {};
     class DAM_AKM: arifle_AKM_F
@@ -35,7 +29,7 @@ class CfgWeapons
 
         class WeaponSlotsInfo: WeaponSlotsInfo
         {
-            class CowsSlot: CowsSlot
+            class CowsSlot: CowsSlot_Rail
             {
                 compatibleItems[] =
                 {
