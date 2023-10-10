@@ -3,7 +3,20 @@
 
 class CfgWeapons
 {
-    class arifle_AKM_base_F;
+    class RifleCore;
+    class Rifle: RifleCore
+    {
+        class WeaponSlotsInfo;
+    };
+    class Rifle_Base_F: Rifle {};
+    class arifle_AKM_base_F: Rifle_Base_F
+    {
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            class CowsSlot;
+        };
+    };
+    class arifle_AKM_base_F: arifle_AKM_base_F {};
     class DAM_AKM: arifle_AKM_base_F
     {
         // Mod Info
@@ -19,6 +32,33 @@ class CfgWeapons
 
         magazines[] = {};
         magazineWell[] = {};
+
+        class WeaponSlotsInfo: WeaponSlotsInfo
+        {
+            class CowsSlot: CowsSlot
+            {
+                compatibleItems[] =
+                {
+                    "Aux501_cows_dms",
+                    "Aux501_cows_dms_2",
+                    "Aux501_cows_dms_3",
+                    "Aux501_cows_dms_4",
+                    "Aux501_cows_holoscope",
+                    "Aux501_cows_holoscope_2",
+                    "Aux501_cows_holoscope_3",
+                    "Aux501_cows_holosight",
+                    "Aux501_cows_holosight_2",
+                    "Aux501_cows_holosight_3",
+                    "Aux501_cows_mrco",
+                    "Aux501_cows_mrco_2",
+                    "Aux501_cows_mrco_3",
+                    "Aux501_cows_rco",
+                    "Aux501_cows_rco_2",
+                    "Aux501_cows_rco_3",
+                    "Aux501_cows_reflex_optic"
+                };
+            };
+        };
     };
 };
 

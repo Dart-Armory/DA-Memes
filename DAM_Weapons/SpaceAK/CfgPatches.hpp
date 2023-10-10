@@ -9,8 +9,10 @@ class CfgPatches
         {
             "DAM_Weapons",
                 // Core Config
-            "A3_Weapons_F_Exp_Rifles_AKM"
+            "A3_Weapons_F_Exp_Rifles_AKM",
                 // AKM
+            "Aux501_Patch_Accessories"
+                // Scopes
         };
         units[] = {};
         weapons[] =
