@@ -30,7 +30,7 @@ class CfgWeapons
         displayName = "[DA] AKM";
         baseWeapon = "DAM_AKM";
 
-        magazines[] = {"DAM_Mag_AKM_30Rnd"};
+        magazines[] = {"DAM_Mag_AKM_30Rnd", "DAM_Mag_AKM_75Rnd"};
         magazineWell[] = {};
 
         class WeaponSlotsInfo: WeaponSlotsInfo
@@ -82,5 +82,20 @@ class CfgMagazines
         hiddenSelections[] = {};
         hiddenSelectionsTextures[] = {};
         picture = "\A3\Weapons_F_Exp\Data\UI\icon_30Rnd_762x39_Mag_F_ca.paa";
+
+        mass = 10;
+    };
+
+    class DAM_Mag_AKM_75Rnd: DAM_Mag_AKM_30Rnd
+    {
+        displayName = "[DA] AKM Drum Magazine";
+        descriptionShort = "Energy Cell<br/>Rounds: 75<br/>Used In: AKM";
+        count = 75;
+
+        modelSpecial = "a3\Weapons_F_Enoch\MagazineProxies\mag_762x39_akm_75rnd";
+        picture = "\a3\Weapons_F_Enoch\MagazineProxies\data\UI\icon_75Rnd_762x39_Mag_F_CA.paa";
+        reloadAction = "GestureReloadAK12_Drum";
+
+        mass = 26;
     };
 };
