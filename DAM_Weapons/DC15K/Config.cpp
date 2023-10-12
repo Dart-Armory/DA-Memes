@@ -16,7 +16,7 @@ class CfgWeapons
     class DAM_DC15KM: arifle_AKM_F
     {
         // Mod Info
-        author = "SweMonkey and DartRuffian";
+        author = "DartRuffian";
 
         // Scope
         scope = 2;
