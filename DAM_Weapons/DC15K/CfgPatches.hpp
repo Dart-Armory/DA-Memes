@@ -1,6 +1,6 @@
 class CfgPatches
 {
-    class DAM_Weapons_SpaceAK
+    class DAM_Weapons_DC15K
     {
         addonRootClass= "DAM_Weapons";
         author = "DartRuffian";
