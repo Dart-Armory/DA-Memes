@@ -28,5 +28,7 @@ class CfgPatches
             "DAM_AKM",
             "DAM_AK15"
         };
+
+        skipWhenMissingDependencies = 1;
     };
 };
