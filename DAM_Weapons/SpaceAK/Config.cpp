@@ -28,6 +28,8 @@ class CfgWeapons
         magazines[] = {"DAM_Mag_AK_30Rnd", "DAM_Mag_AK_75Rnd"};
         magazineWell[] = {};
 
+        fireLightDiffuse[] = {0, 0, 1};
+
         class Single: Single
         {
             class StandardSound
@@ -96,6 +98,8 @@ class CfgWeapons
 
         magazines[] = {"DAM_Mag_AK_30Rnd", "DAM_Mag_AK_75Rnd"};
         magazineWell[] = {};
+
+        fireLightDiffuse[] = {0, 0, 1};
 
         class WeaponSlotsInfo: WeaponSlotsInfo
         {
