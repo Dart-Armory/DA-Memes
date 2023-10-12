@@ -84,17 +84,17 @@ class CfgMagazines
         author = "DartRuffian";
         displayName = "[DA] AKM Magazine";
         displayNameShort = "Medium Energy";
-        descriptionShort = "Energy Cell<br/>Rounds: 30<br/>Used In: AKM";
+        descriptionShort = "Energy Cell<br/>Rounds: 30<br/>Used In: AKM, AK-15";
         count = 30;
 
         JLTS_hasEMPProtection = 1;
 
         model = "\A3\weapons_F\ammo\mag_univ.p3d";
-        modelSpecial = "\a3\Weapons_F_Exp\MagazineProxies\mag_762x39_akm_30rnd.p3d";
+        modelSpecial = "\a3\Weapons_F_exp\MagazineProxies\mag_762x39_ak12_30rnd";
         modelSpecialIsProxy = 1;
         hiddenSelections[] = {};
         hiddenSelectionsTextures[] = {};
-        picture = "\A3\Weapons_F_Exp\Data\UI\icon_30Rnd_762x39_Mag_F_ca.paa";
+        picture = "\a3\Weapons_F_Exp\MagazineProxies\data\UI\icon_30Rnd_762x39_AK12_Mag_Tracer_F_CA.paa";
 
         mass = 10;
     };
@@ -102,7 +102,7 @@ class CfgMagazines
     class DAM_Mag_AK_75Rnd: DAM_Mag_AK_30Rnd
     {
         displayName = "[DA] AKM Drum Magazine";
-        descriptionShort = "Energy Cell<br/>Rounds: 75<br/>Used In: AKM";
+        descriptionShort = "Energy Cell<br/>Rounds: 75<br/>Used In: AKM, AK-15";
         count = 75;
 
         modelSpecial = "a3\Weapons_F_Enoch\MagazineProxies\mag_762x39_akm_75rnd";

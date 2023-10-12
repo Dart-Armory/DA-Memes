@@ -15,6 +15,10 @@ class CfgPatches
                 // AK-15
             "Aux501_Patch_DC15A",
                 // Magazine, ammo
+            "A3_Weapons_F_Exp",
+                // Magazine model/picture
+            "A3_Weapons_F_Enoch",
+                // Drum mag model/picture
             "Aux501_Patch_Accessories"
                 // Scopes
         };
