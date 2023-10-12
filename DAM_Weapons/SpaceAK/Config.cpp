@@ -5,7 +5,14 @@ class CowsSlot_Rail;
 
 class CfgWeapons
 {
-    class arifle_AKM_F;
+    class Rifle_Base_F;
+    class arifle_AKM_base_F: Rifle_Base_F
+    {
+        class Single;
+        class FullAuto;
+        class FullAuto_medium;
+    };
+    class arifle_AKM_F: arifle_AKM_base_F {};
     class DAM_AKM: arifle_AKM_F
     {
         // Mod Info
@@ -20,6 +27,47 @@ class CfgWeapons
 
         magazines[] = {"DAM_Mag_AK_30Rnd", "DAM_Mag_AK_75Rnd"};
         magazineWell[] = {};
+
+        class Single: Single
+        {
+            class StandardSound
+            {
+                begin1[] = {"\Aux501\Weapons\Republic\DC15S\sounds\dc15s_shot.wss", "+1db", 1, 2200};
+                soundBegin[] = {"begin1", 1};
+            };
+            class SilencedSound
+            {
+                begin1[] = {"\Aux501\Weapons\Republic\DC15S\sounds\dc15s_shot.wss", 0.3, 1, 1100};
+                soundBegin[] = {"begin1", 1};
+            };
+        };
+
+        class FullAuto: FullAuto
+        {
+            class StandardSound
+            {
+                begin1[] = {"\Aux501\Weapons\Republic\DC15S\sounds\dc15s_shot.wss", "+1db", 1, 2200};
+                soundBegin[] = {"begin1", 1};
+            };
+            class SilencedSound
+            {
+                begin1[] = {"\Aux501\Weapons\Republic\DC15S\sounds\dc15s_shot.wss", 0.3, 1, 1100};
+                soundBegin[] = {"begin1", 1};
+            };
+        };
+        class FullAuto_medium: FullAuto_medium
+        {
+            class StandardSound
+            {
+                begin1[] = {"\Aux501\Weapons\Republic\DC15S\sounds\dc15s_shot.wss", "+1db", 1, 2200};
+                soundBegin[] = {"begin1", 1};
+            };
+            class SilencedSound
+            {
+                begin1[] = {"\Aux501\Weapons\Republic\DC15S\sounds\dc15s_shot.wss", 0.3, 1, 1100};
+                soundBegin[] = {"begin1", 1};
+            };
+        };
     };
 
     class arifle_AK12_base_F;
