@@ -13,7 +13,7 @@ class CfgWeapons
         class FullAuto_medium;
     };
     class arifle_AKM_F: arifle_AKM_base_F {};
-    class DAM_AKM: arifle_AKM_F
+    class DAM_DC15KM: arifle_AKM_F
     {
         // Mod Info
         author = "SweMonkey and DartRuffian";
@@ -22,10 +22,10 @@ class CfgWeapons
         scope = 2;
         scopeArsenal = 2;
 
-        displayName = "[DA] AKM";
-        baseWeapon = "DAM_AKM";
+        displayName = "[DA] DC-15KM";
+        baseWeapon = "DAM_DC15KM";
 
-        magazines[] = {"DAM_Mag_AK_30Rnd", "DAM_Mag_AK_75Rnd"};
+        magazines[] = {"DAM_Mag_DC15K_30Rnd", "DAM_Mag_DC15K_75Rnd"};
         magazineWell[] = {};
 
         fireLightDiffuse[] = {0, 0, 1};
@@ -84,7 +84,7 @@ class CfgWeapons
         class FullAuto;
     };
     class arifle_AK12U_F: arifle_AK12U_base_F {};
-    class DAM_AK15: arifle_AK12U_F
+    class DAM_DC15K: arifle_AK12U_F
     {
         // Mod Info
         author = "DartRuffian";
@@ -93,10 +93,10 @@ class CfgWeapons
         scope = 2;
         scopeArsenal = 2;
 
-        displayName = "[DA] AK-15";
-        baseWeapon = "DAM_AK15";
+        displayName = "[DA] DC-15K";
+        baseWeapon = "DAM_DC15K";
 
-        magazines[] = {"DAM_Mag_AK_30Rnd", "DAM_Mag_AK_75Rnd"};
+        magazines[] = {"DAM_Mag_DC15K_30Rnd", "DAM_Mag_DC15K_75Rnd"};
         magazineWell[] = {};
 
         fireLightDiffuse[] = {0, 0, 1};
@@ -215,12 +215,12 @@ class CfgWeapons
 class CfgMagazines
 {
     class Aux501_Weapons_Mags_20mwdp30;
-    class DAM_Mag_AK_30Rnd: Aux501_Weapons_Mags_20mwdp30
+    class DAM_Mag_DC15K_30Rnd: Aux501_Weapons_Mags_20mwdp30
     {
         author = "DartRuffian";
         displayName = "[DA] AKM Magazine";
         displayNameShort = "Medium Energy";
-        descriptionShort = "Energy Cell<br/>Rounds: 30<br/>Used In: AKM, AK-15";
+        descriptionShort = "Energy Cell<br/>Rounds: 30<br/>Used In: DC-15KM, DC-15K";
         count = 30;
 
         JLTS_hasEMPProtection = 1;
@@ -235,10 +235,10 @@ class CfgMagazines
         mass = 10;
     };
 
-    class DAM_Mag_AK_75Rnd: DAM_Mag_AK_30Rnd
+    class DAM_Mag_DC15K_75Rnd: DAM_Mag_DC15K_30Rnd
     {
         displayName = "[DA] AKM Drum Magazine";
-        descriptionShort = "Energy Cell<br/>Rounds: 75<br/>Used In: AKM, AK-15";
+        descriptionShort = "Energy Cell<br/>Rounds: 75<br/>Used In: DC-15KM, DC-15K";
         count = 75;
 
         modelSpecial = "a3\Weapons_F_Enoch\MagazineProxies\mag_762x39_akm_75rnd";

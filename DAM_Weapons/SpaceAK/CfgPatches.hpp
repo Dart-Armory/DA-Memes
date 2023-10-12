@@ -25,8 +25,8 @@ class CfgPatches
         units[] = {};
         weapons[] =
         {
-            "DAM_AKM",
-            "DAM_AK15"
+            "DAM_DC15KM",
+            "DAM_DC15K"
         };
 
         skipWhenMissingDependencies = 1;
