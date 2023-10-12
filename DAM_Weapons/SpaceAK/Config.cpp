@@ -26,6 +26,12 @@ class CfgWeapons
     class arifle_AK12U_base_F: arifle_AK12_base_F
     {
         class WeaponSlotsInfo;
+        class Single;
+        class single_medium_optics1;
+        class single_medium_optics2;
+        class Burst;
+        class Burst_medium;
+        class FullAuto;
     };
     class arifle_AK12U_F: arifle_AK12U_base_F {};
     class DAM_AK15: arifle_AK12U_F
@@ -67,6 +73,87 @@ class CfgWeapons
                     "Aux501_cows_rco_3",
                     "Aux501_cows_reflex_optic"
                 };
+            };
+        };
+
+        class Single: Single
+        {
+            class StandardSound
+            {
+                begin1[] = {"\Aux501\Weapons\Republic\DC15S\sounds\dc15s_shot.wss", "+1db", 1, 2200};
+                soundBegin[] = {"begin1", 1};
+            };
+            class SilencedSound
+            {
+                begin1[] = {"\Aux501\Weapons\Republic\DC15S\sounds\dc15s_shot.wss", 0.3, 1, 1100};
+                soundBegin[] = {"begin1", 1};
+            };
+        };
+        class single_medium_optics1: single_medium_optics1
+        {
+            class StandardSound
+            {
+                begin1[] = {"\Aux501\Weapons\Republic\DC15S\sounds\dc15s_shot.wss", "+1db", 1, 2200};
+                soundBegin[] = {"begin1", 1};
+            };
+            class SilencedSound
+            {
+                begin1[] = {"\Aux501\Weapons\Republic\DC15S\sounds\dc15s_shot.wss", 0.3, 1, 1100};
+                soundBegin[] = {"begin1", 1};
+            };
+        };
+        class single_medium_optics2: single_medium_optics2
+        {
+            class StandardSound
+            {
+                begin1[] = {"\Aux501\Weapons\Republic\DC15S\sounds\dc15s_shot.wss", "+1db", 1, 2200};
+                soundBegin[] = {"begin1", 1};
+            };
+            class SilencedSound
+            {
+                begin1[] = {"\Aux501\Weapons\Republic\DC15S\sounds\dc15s_shot.wss", 0.3, 1, 1100};
+                soundBegin[] = {"begin1", 1};
+            };
+        };
+
+        class Burst: Burst
+        {
+            class StandardSound
+            {
+                begin1[] = {"\Aux501\Weapons\Republic\DC15S\sounds\dc15s_shot.wss", "+1db", 1, 2200};
+                soundBegin[] = {"begin1", 1};
+            };
+            class SilencedSound
+            {
+                begin1[] = {"\Aux501\Weapons\Republic\DC15S\sounds\dc15s_shot.wss", 0.3, 1, 1100};
+                soundBegin[] = {"begin1", 1};
+            };
+        };
+        class Burst_medium: Burst_medium
+        {
+            class StandardSound
+            {
+                begin1[] = {"\Aux501\Weapons\Republic\DC15S\sounds\dc15s_shot.wss", "+1db", 1, 2200};
+                soundBegin[] = {"begin1", 1};
+            };
+            class SilencedSound
+            {
+                begin1[] = {"\Aux501\Weapons\Republic\DC15S\sounds\dc15s_shot.wss", 0.3, 1, 1100};
+                soundBegin[] = {"begin1", 1};
+            };
+        };
+
+        class FullAuto: FullAuto
+        {
+            class StandardSound
+            {
+                begin1[] = {"\Aux501\Weapons\Republic\DC15S\sounds\dc15s_shot.wss", "+1db", 1, 2200};
+                soundBegin[] = {"begin1", 1};
+            };
+            class SilencedSound
+            {
+                begin1[] = {"\Aux501\Weapons\Republic\DC15S\sounds\dc15s_shot.wss", 0.3, 1, 1100};
+                soundBegin[] = {"begin1", 1};
             };
         };
     };
