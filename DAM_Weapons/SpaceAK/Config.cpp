@@ -25,10 +25,7 @@ class CfgWeapons
     class arifle_AK12_base_F;
     class arifle_AK12U_base_F: arifle_AK12_base_F
     {
-        class WeaponSlotsInfo: WeaponSlotsInfo
-        {
-            class CowsSlot;
-        };
+        class WeaponSlotsInfo;
     };
     class arifle_AK12U_F: arifle_AK12U_base_F {};
     class DAM_AK15: arifle_AK12U_F
